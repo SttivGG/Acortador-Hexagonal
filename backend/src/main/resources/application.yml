@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: acortador-hexagonal
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/acortador}
+      auto-index-creation: true
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+app:
+  public-base-url: ${PUBLIC_BASE_URL:http://localhost:8080}
